@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Y. Landingpage</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="wrapper">
+            <header id="top">
+                <img src="Logo.png" alt="Y." id="logo">
+                <div class="navbar">
+                    <a href="me.hmtl">Über mich</a>
+                    <a href="education.hmtl">Bildung</a>
+                    <div class="dropdown">
+                        <button class="drop-button" onclick="myFunction()">Arbeit</button>
+                        <div class="drop-content" id="myDropdown">
+                            <a href="employers.html">ehm. Arbeitgeber</a>
+                            <a href="samples.hmtl">Arbeitsproben</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <p>what f's</p>
+
+            <footer id="bottom">
+                <p>&copy; Website von Yasmin Walther</p>
+            </footer>
+
+
+
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (e) {
+                    if (!e.target.matches('.drop-button')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
